@@ -1,6 +1,14 @@
-# Software Projects
+# Home
 
-## Media Database
+## About Me
+
+Hi, I'm Alex Cook.
+
+![Alex Cook](https://raw.githubusercontent.com/alexpcook/alexpcook.github.io/main/assets/images/me.png)
+
+## Software Projects
+
+### Media Database
 
 For several years, I've been running a small, local SQL installation to keep track of films I've watched. As a fan of movies, this is a helpful way to categorize, track, and report on what I've watched in the past. Determining trends in the data becomes a simple exercise of writing a SQL query:
 
@@ -42,7 +50,7 @@ where <command> is one of:
 
 In the future, I would like to enhance the project structure to enable easier addition of new types of media to the database. Restructuring the internals of the S3 object key storage could also save API calls to AWS and allow easier advanced searches and filtering of media by user-given criteria.
 
-## Practice Music Scales API
+### Practice Music Scales API
 
 I play piano and wanted to devise a way to make practicing scales more fun and challenging. One way to increase the level of difficulty is to play all the major and minor scales in a random order instead of following the circle of fifths. This forces you to better learn each scale in isolation rather than relying on the familiar pattern of adding an additional sharp or flat as you go around the circle of fifths.
 
@@ -57,11 +65,11 @@ Here's a screenshot of the deployed website showing the result of one particular
 
 Currently, the only supported AWS deployment option is a serverless stack comprised of AWS Lambda for the dynamic Go API, S3 for the static website, and an API Gateway to provide a common access point to these two services. In the future, I intend to finish an in-progress containerization option to deploy the app to an EKS cluster.
 
-## YAML to EC2 Converter
+### YAML to EC2 Converter
 
 This project ([GitHub](https://github.com/alexpcook/ec2yaml)) contains a simple Python CLI and boto3 integration to convert a YAML configuration file into an EC2 instance. In addition to controlling the usual EC2 instance settings, the CLI executes an extensive BASH user data script to add users (plus their ssh keys) and additional non-root EBS volumes.
 
-## Infrastructure Templates
+### Infrastructure Templates
 
 This project ([GitHub](https://github.com/alexpcook/infrastructure-templates)) is a general collection of useful infrastructure templates. Currently, it contains a Terraform module that creates an AWS VPC, Internet gateway, subnets, route tables, network access control lists (NACLs), and security groups. It then deploys a configurable number of EC2 instances to the VPC using a desired AMI. This is suitable for getting one or more EC2 instances running on AWS with the capability to SSH into them from a configurable public IP address.
 
