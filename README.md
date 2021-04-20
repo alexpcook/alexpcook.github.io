@@ -24,7 +24,7 @@ As a result, I wrote my `media-db` project ([GitHub](https://github.com/alexpcoo
 * A `config` package that handles the connection information to AWS (used in concert with the AWS CLI connection configuration).
 * A `schema` package that defines a common media interface and specific implementations (e.g. movies, music).
 * A `service` package that interfaces with the AWS SDK for Go to call S3 APIs.
-* A `cli` package that handles the user-interface logic.
+* A `cli` package that handles the user interface logic.
 
 Right now, the CLI is capable of configuring connection information to AWS (profile, region, and bucket name), as well as creating, reading, updating, and deleting entries in the database. It so far supports two media types, music and movies.
 
