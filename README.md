@@ -4,7 +4,7 @@
 
 Hi, I'm Alex Cook.
 
-![Alex Cook](https://raw.githubusercontent.com/alexpcook/alexpcook.github.io/main/assets/images/me.png)
+![Alex Cook](https://raw.githubusercontent.com/alexpcook/alexpcook.github.io/main/assets/images/me.jpg)
 
 ## Software Projects
 
