@@ -63,4 +63,6 @@ This project ([GitHub](https://github.com/alexpcook/ec2yaml)) contains a simple 
 
 ## Infrastructure Templates
 
-Add description
+This project ([GitHub](https://github.com/alexpcook/infrastructure-templates)) is a general collection of useful infrastructure templates. Currently, it contains a Terraform module that creates an AWS VPC, Internet gateway, subnets, route tables, network access control lists (NACLs), and security groups. It then deploys a configurable number of EC2 instances to the VPC using a desired AMI. This is suitable for getting one or more EC2 instances running on AWS with the capability to SSH into them from a configurable public IP address.
+
+In the future, it would be useful to add other common infrastructure deployment patterns, such as making an AWS EKS cluster and then configuring the local `kubectl` installation to connect to the cluster.
