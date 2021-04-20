@@ -59,7 +59,7 @@ Currently, the only supported AWS deployment option is a serverless stack compri
 
 ## YAML to EC2 Converter
 
-Add description
+This project ([GitHub](https://github.com/alexpcook/ec2yaml)) contains a simple Python CLI and boto3 integration to convert a YAML configuration file into an EC2 instance. In addition to controlling the usual EC2 instance settings, the CLI executes an extensive BASH user data script to add users (plus their ssh keys) and additional non-root EBS volumes.
 
 ## Infrastructure Templates
 
