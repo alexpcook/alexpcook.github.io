@@ -2,7 +2,9 @@
 
 ## About Me
 
-Hi, I'm Alex Cook.
+Hi, I'm Alex Cook. I've spent the last four years working in technology in the Midwest, and am now living in the Bay Area. My skillset includes solutions engineering, technical architecture, systems programming, automation, and scripting.
+
+You can also find me online on [LinkedIn](https://www.linkedin.com/in/alexpcook/) and [GitHub](https://github.com/alexpcook/). I'm always open to sharing my experiences and meeting like-minded individuals, so please reach out if you're interested in talking.
 
 ![Alex Cook](https://raw.githubusercontent.com/alexpcook/alexpcook.github.io/main/assets/images/me.jpg)
 
