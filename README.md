@@ -28,11 +28,34 @@ As a result, I wrote my `media-db` project ([GitHub](https://github.com/alexpcoo
 
 Right now, the CLI is capable of configuring connection information to AWS (profile, region, and bucket name), as well as creating, reading, updating, and deleting entries in the database. It so far supports two media types, music and movies.
 
+```plain
+❯ media-db
+usage: media-db <command> [movie|music] [<flag>...]
+
+where <command> is one of:
+  setup         Configure the database connection to AWS
+  create        Create an entry in the database
+  read          Read entries from the database
+  update        Update an entry in the database
+  delete        Delete an entry from the database
+```
+
 In the future, I would like to enhance the project structure to enable easier addition of new types of media to the database. Restructuring the internals of the S3 object key storage could also save API calls to AWS and allow easier advanced searches and filtering of media by user-given criteria.
 
 ## Practice Music Scales API
 
-Add description
+I play piano and wanted to devise a way to make practicing scales more fun and challenging. One way to increase the level of difficulty is to play all the major and minor scales in a random order instead of following the circle of fifths. This forces you to better learn each scale in isolation rather than relying on the familiar pattern of adding an additional sharp or flat as you go around the circle of fifths.
+
+To accomplish this goal, I wrote my `practice-music-scales` project ([GitHub](https://github.com/alexpcook/practice-music-scales)). This codebase contains:
+
+* An `app` directory that contains a Go API to return major and minor scales in a random order, and a static website written in HTML, CSS, and JavaScript to display the result to the user.
+* An `aws` directory that contains options to deploy the code to various AWS services.
+
+Here's a screenshot of the deployed website showing the result of one particular API call to the Go service:
+
+![practice-music-scales example](https://raw.githubusercontent.com/alexpcook/alexpcook.github.io/main/assets/images/scales.png)
+
+Currently, the only supported AWS deployment option is a serverless stack comprised of AWS Lambda for the dynamic Go API, S3 for the static website, and an API Gateway to provide a common access point to these two services. In the future, I intend to finish an in-progress containerization option to deploy the app to an EKS cluster.
 
 ## YAML to EC2 Converter
 
